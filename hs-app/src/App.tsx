@@ -60,9 +60,8 @@ const router = createBrowserRouter([
         )
     }
 
-], {
-    basename: '/CristalHS'
-})
+])
+
 export default function App() {
     return (
         <>
