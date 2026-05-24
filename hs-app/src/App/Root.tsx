@@ -21,7 +21,7 @@ export default function Root() {
     return (
         <div
             style={{ backgroundImage: `url(${mainFon})`}}
-            className='fixed inset-0 w-full h-full bg-cover bg-center bg-no-repeat -z-10 forward-layer'>
+            className='fixed inset-0 w-full h-full bg-cover bg-center bg-no-repeat forward-layer'>
 
             <nav className="relative z-50">
                 <div className={`container mx-auto px-4 py-4 flex items-center justify-between gap-8 text-white bg-gray-900/20 backdrop-blur-md border-b border-white/5 md:border-x md:border-white/5 md:rounded-b-2xl `}>
