@@ -22,7 +22,7 @@ export default function Root() {
         <div
             style={{ backgroundImage: `url(${mainFon})`,
                      backgroundColor: '#1c1917'}}
-            className='min-h-[100vh] bg-cover bg-center bg-no-repeat w-full flex flex-col'>
+            className='min-h-[100vh] bg-cover bg-center bg-no-repeat bg-local md:bg-fixed w-full flex flex-col'>
 
             <nav className="relative z-50">
                 <div className={`container mx-auto px-4 py-4 flex items-center justify-between gap-8 text-white bg-gray-900/20 backdrop-blur-md border-b border-white/5 md:border-x md:border-white/5 md:rounded-b-2xl `}>
