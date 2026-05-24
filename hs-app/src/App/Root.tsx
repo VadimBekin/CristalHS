@@ -20,8 +20,9 @@ export default function Root() {
 
     return (
         <div
-            style={{ backgroundImage: `url(${mainFon})`}}
-            className='min-h-[100vh] bg-cover bg-center bg-no-repeat bg-fixed w-full flex flex-col'>
+            style={{ backgroundImage: `url(${mainFon})`,
+                     backgroundColor: '#1c1917'}}
+            className='min-h-[100vh] bg-cover bg-center bg-no-repeat w-full flex flex-col'>
 
             <nav className="relative z-50">
                 <div className={`container mx-auto px-4 py-4 flex items-center justify-between gap-8 text-white bg-gray-900/20 backdrop-blur-md border-b border-white/5 md:border-x md:border-white/5 md:rounded-b-2xl `}>
@@ -142,7 +143,7 @@ export default function Root() {
                 <div className="container mx-auto px-4">
                     <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-gray-300 text-sm">
                         <div className="flex items-center gap-2">
-                            <span>© 2024 CristalHS. Все права защищены.</span>
+                            <span>© 2026 CristalHS. Все права защищены.</span>
                         </div>
 
                         <div className="flex gap-6 items-center ">
