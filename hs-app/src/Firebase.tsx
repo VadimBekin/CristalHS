@@ -11,6 +11,9 @@ const firebaseConfig = {
     messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
     appId: import.meta.env.VITE_FIREBASE_APP_ID
 };
-
+if (!firebaseConfig.databaseURL) {
+    console.error('Firebase databaseURL is missing!');
+    throw new Error('Firebase databaseURL is not configured');
+}
 const app = initializeApp(firebaseConfig);
 export const database = getDatabase(app);
