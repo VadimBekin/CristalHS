@@ -28,62 +28,6 @@ https://cristal-hs.vercel.app/
 - **Axios** - HTTP запросы
 - **Vercel** - деплой
 
-## Структура проекта
-
-src/
-├── Admin/
-│   ├── ContentEditor/
-│   │   └── ContentEditor.tsx
-│   ├── EditBtn/
-│   │   ├── EditDeck.tsx
-│   │   ├── EditGuide.tsx
-│   │   └──  EditNews.tsx
-│   ├── AddDeck.tsx
-│   ├── AddGuide.tsx
-│   ├── AddNews.tsx
-│   ├── AdminLogin.tsx
-│   ├── AdminPanel.tsx
-│   └── ProtectedRoute.tsx
-│
-├── App/
-│   └── Root.tsx                
-│
-├── assets/  
-│
-├── Cards/                      
-│   ├── FilterCards.tsx
-│   ├── MainCards.tsx
-│   └── ModalInfo.tsx
-│
-├── Components/                 
-│   ├── CopyInput.tsx
-│   ├── ImageModal.tsx          
-│   ├── Pagination.tsx
-│   ├── RenderContent.tsx
-│   └── Spinner.tsx
-│
-├── Decks/                      
-│   └── DecksPage.tsx
-│
-├── Guide/                      
-│   ├── GuideDetailPage.tsx
-│   └── GuidesPage.tsx
-│
-├── Hooks/                      
-│   └── useDebounce.ts
-│
-├── Interfaces/                 
-│   └── Interfaces.ts
-│
-├── MainPage/                    
-│   ├── NewsDetailPage.tsx
-│   └── NewsPage.tsx
-│
-├── Firebase.tsx                
-├── App.tsx                     
-├── main.tsx                    
-└── style.css    
-
 
 ### Требования
 - Node.js 18+
@@ -101,3 +45,59 @@ npm install
 
 # 4. Запустите проект
 npm run dev
+
+
+Структура проекта:
+src/
+├── Admin/                      
+│   ├── ContentEditor/          
+│   │   └── ContentEditor.tsx
+│   ├── EditBtn/                
+│   │   ├── EditDeck.tsx
+│   │   ├── EditGuide.tsx
+│   │   └── EditNews.tsx
+│   ├── AddDeck.tsx             
+│   ├── AddGuide.tsx            
+│   ├── AddNews.tsx             
+│   ├── AdminLogin.tsx          
+│   ├── AdminPanel.tsx          
+│   └── ProtectedRoute.tsx      
+│
+├── App/                        
+│   └── Root.tsx                
+│
+├── assets/                     
+│
+├── Cards/                      
+│   ├── FilterCards.tsx         
+│   ├── MainCards.tsx           
+│   └── ModalInfo.tsx           
+│
+├── Components/                 
+│   ├── CopyInput.tsx           
+│   ├── ImageModal.tsx          
+│   ├── Pagination.tsx          
+│   ├── RenderContent.tsx       
+│   └── Spinner.tsx             
+│
+├── Decks/                      
+│   └── DecksPage.tsx           
+│
+├── Guide/                      
+│   ├── GuideDetailPage.tsx     
+│   └── GuidesPage.tsx          
+│
+├── Hooks/                     
+│   └── useDebounce.ts          
+│
+├── Interfaces/                 
+│   └── Interfaces.ts           
+│
+├── MainPage/                   
+│   ├── NewsDetailPage.tsx      
+│   └── NewsPage.tsx            
+│
+├── Firebase.tsx                
+├── App.tsx                     
+├── main.tsx                    
+└── style.css                   
