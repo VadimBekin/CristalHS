@@ -25,7 +25,7 @@ export default function RenderContent({ blocks }: RenderContentProps) {
                 );
             case 'image':
                 return (
-                    <div className="my-6">
+                    <div className="my-6 flex justify-center items-center">
                         <img
                             src={block.content}
                             alt="content"

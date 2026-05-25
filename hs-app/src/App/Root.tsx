@@ -36,11 +36,14 @@ export default function Root() {
                 <nav className="relative z-50">
                     <div className="container mx-auto px-4 py-4 flex items-center justify-between gap-8 text-white bg-gray-900/20 backdrop-blur-md border-b border-white/5 md:border-x md:border-white/5 md:rounded-b-2xl">
                         <div className="flex items-center gap-8">
-                            <img
-                                src={logo}
-                                className="w-24 h-auto transition-all duration-800 ease-in-out transform hover:scale-110 hover:rotate-[360deg]"
-                                alt="logo"
-                            />
+                            <NavLink to={'/news'} className={'cursor-pointer'}>
+                                <img
+                                    src={logo}
+                                    className="w-24 h-auto transition-all duration-800 ease-in-out transform hover:scale-110 hover:rotate-[360deg]"
+                                    alt="logo"
+                                />
+                            </NavLink>
+
                         </div>
                         <div className="hidden md:flex items-center gap-8">
                             <NavLink to="/news" className={({ isActive }) =>
