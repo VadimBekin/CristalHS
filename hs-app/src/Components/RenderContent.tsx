@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import type { ContentBlock } from '../Interfaces/Interfaces';
 import ImageModal from './ImageModal.tsx';
+import CopyInput from "./CopyInput.tsx";
 
 interface RenderContentProps {
     blocks: ContentBlock[];
@@ -42,11 +43,10 @@ export default function RenderContent({ blocks }: RenderContentProps) {
                 );
             case 'code':
                 return (
-                    <pre className="bg-stone-900/50 border border-white/10 rounded-lg p-4 my-4 overflow-x-auto">
-                        <code className="text-gray-100 text-sm font-mono">
-                            {block.content}
-                        </code>
-                    </pre>
+                    <div>
+                        <CopyInput value={block.content} label={'Код для копирования'} />
+                    </div>
+
                 );
             case 'list':
                 return (

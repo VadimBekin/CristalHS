@@ -21,25 +21,27 @@ export default function CopyInput({ value, label = 'Код колоды' }: Copy
     return (
         <div className="w-full">
             {label && <label className="block text-xs text-gray-300 mb-2">{label}</label>}
-            <div className="grid gap-2">
+            <div className="mt-3">
                 <input
                     type="text"
                     value={value}
                     readOnly
-                    className="flex-1 px-3 py-2 bg-stone-800/50 border border-white/10 rounded-lg text-gray-300 text-sm font-mono cursor-default truncate"
+                    className="w-full px-3 py-2 bg-stone-800/50 border border-white/10 rounded-lg text-gray-300 text-sm font-mono cursor-default truncate"
                 />
-                <button
-                    onClick={handleCopy}
-                    className={`
-                        px-4 py-2 rounded-lg transition-all duration-200 text-sm font-medium whitespace-nowrap
-                        ${copied
-                        ? 'bg-green-600 text-white'
-                        : 'bg-yellow-600 hover:bg-yellow-500 border-white/20'
-                    }
-                    `}
-                >
-                    {copied ? '✓ Скопировано' : 'Копировать'}
-                </button>
+                <div className="flex justify-center mt-3">
+                    <button
+                        onClick={handleCopy}
+                        className={`
+                            px-4 py-2 rounded-lg transition-all duration-200 text-sm font-medium whitespace-nowrap max-w-[310px] w-full
+                            ${copied
+                            ? 'bg-green-600 text-white'
+                            : 'bg-yellow-600 hover:bg-yellow-500 border-white/20'
+                            }
+                        `}
+                    >
+                        {copied ? '✓ Скопировано' : 'Копировать'}
+                    </button>
+                </div>
             </div>
         </div>
     );
