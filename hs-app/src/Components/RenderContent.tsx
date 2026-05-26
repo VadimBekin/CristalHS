@@ -44,7 +44,7 @@ export default function RenderContent({ blocks }: RenderContentProps) {
             case 'code':
                 return (
                     <div>
-                        <CopyInput value={block.content} label={'Код для копирования'} />
+                        <CopyInput value={block.content} label={'Код колоды'} />
                     </div>
 
                 );
